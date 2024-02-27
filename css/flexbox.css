@@ -1,4 +1,4 @@
-.cabecalho__container{
+.cabecalho__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,12 +6,23 @@
     top: 0;
 }
 
-.cabecalho__pesquisar__item{
+.cabecalho__pesquisar__item {
     display: none;
 }
 
-@media (min-width: 834px){
-    .cabecalho__pesquisar__item{
+.rodape__container {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: wrap;
+}
+
+@media (min-width: 834px) {
+    .cabecalho__pesquisar__item {
         display: block;
+    }
+
+    .rodape__container {
+        justify-content: space-between;
     }
 }
